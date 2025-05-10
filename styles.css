@@ -2,18 +2,77 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-poppins);
   margin: 0;
   font-size: 16px;
   background-color: #000;
-  /* ADDED HEIGHT FOR NAV BAR */
+}
+
+/* ADDED HEIGHT FOR NAV BAR */
+body {
   margin-top: 115px;
-  /* ************* */
 }
 
 section > h2 {
   display: none;
+}
+
+/* PRIMARY CTA */
+a.primary-cta {
+  text-decoration: unset;
+  background-color: #9717ff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: block;
+  border: unset;
+  padding: 16px 73px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+a.primary-cta:hover {
+  background-color: #7313c2;
+}
+
+/* SECTIONS */
+#latest {
+  padding-top: 170px;
+}
+
+#latest,
+#video,
+#merch,
+#events,
+#contact {
+  /* padding-top: 145px; */
+  padding-top: 170px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  color: #ba7de3;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: unset;
+}
+
+/* SECTION SUBTITLE */
+.section-subtitle {
+  color: #fff;
+  font-size: 2.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 75px 0;
 }
 
 header {
@@ -126,23 +185,52 @@ header {
   justify-content: center;
   align-items: center;
   gap: 38px;
-  margin-top: 145px;
+  margin: 0 auto 75px auto;
+  max-width: 1128px;
 }
 
-.latest-updates-container__item > h3 {
-  color: #ba7de3;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  margin: unset;
+.latest-updates-container__item > img {
+  width: 100%;
 }
 
-.latest-updates-container__item > h4 {
-  color: #fff;
-  font-size: 2.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 75px 0;
+.latest-cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yt-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#video > .yt-video-container:nth-child(4) {
+  margin-bottom: 165px;
+}
+
+.merch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin: 0 auto 75px auto;
+  max-width: 1128px;
+}
+
+.merch-container .merch-item > img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.merch-container .merch-item > img:hover {
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.merch-container .merch-item > h5 {
+  display: none;
 }

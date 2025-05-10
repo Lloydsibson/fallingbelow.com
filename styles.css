@@ -1,3 +1,148 @@
-h1 {
-  color: red;
+:root {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+  margin: 0;
+  font-size: 16px;
+  background-color: #000;
+  /* ADDED HEIGHT FOR NAV BAR */
+  margin-top: 115px;
+  /* ************* */
+}
+
+section > h2 {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(151, 23, 255, 1) 100%
+  );
+  padding: 17px 20px;
+}
+
+.nav-container > nav {
+  display: flex;
+}
+
+.nav-container > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: unset;
+  margin-block-end: unset;
+  margin-block-start: unset;
+  padding-inline-start: unset;
+}
+
+.nav-container > nav > ul > li {
+  list-style: none;
+  margin-right: 25px;
+  display: block;
+  text-align: unset;
+}
+
+.nav-container > nav > ul > li:last-child {
+  margin-right: unset;
+}
+
+.nav-container > nav > ul > li:hover {
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.nav-container > nav > ul > li#sign-up-cta > button {
+  text-decoration: unset;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.313rem;
+  text-transform: uppercase;
+  display: block;
+  border: unset;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+}
+
+.nav-container > nav > ul > li#sign-up-cta:hover {
+  opacity: unset;
+  transform: scale(0.95);
+}
+
+.nav-container > nav > ul > li > a {
+  text-decoration: unset;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.313rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nav-logo h1 {
+  display: none;
+}
+
+.info-banner {
+  background-color: #c00be0;
+}
+
+.info-banner p {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+#hero-video img {
+  width: 100%;
+  height: calc(100vh - 115px);
+  object-fit: cover;
+}
+
+.latest-updates-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-top: 145px;
+}
+
+.latest-updates-container__item > h3 {
+  color: #ba7de3;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: unset;
+}
+
+.latest-updates-container__item > h4 {
+  color: #fff;
+  font-size: 2.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 75px 0;
 }

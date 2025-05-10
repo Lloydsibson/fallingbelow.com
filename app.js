@@ -1,1 +1,3 @@
-console.log("Hello, world! - APP");
+// FOOTER - CURRENT YEAR
+const currentYear = new Date().getFullYear();
+document.querySelector("#currentYear").textContent = currentYear;

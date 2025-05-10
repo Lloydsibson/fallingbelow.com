@@ -243,3 +243,65 @@ header {
   text-align: center;
   margin: unset;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 175px 16px 50px 16px;
+  background: #000000;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(151, 23, 255, 1) 100%
+  );
+}
+
+footer > img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+footer > p {
+  color: #fff;
+  font-size: 1.313rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: unset;
+  margin-block-end: unset;
+  margin-block-start: unset;
+  padding-inline-start: unset;
+  width: 100%;
+}
+
+footer ul > li {
+  list-style: none;
+  display: block;
+  text-align: unset;
+}
+
+footer ul > li > a {
+  font-size: 0;
+  display: block;
+}
+
+footer svg {
+  width: 33px;
+  height: 33px;
+  margin: 0 10px;
+}
+
+footer svg > path {
+  fill: #fff;
+}

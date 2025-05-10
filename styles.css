@@ -23,7 +23,14 @@ section > h2 {
 }
 
 /* PRIMARY CTA */
-a.primary-cta {
+.primary-cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-cta {
   text-decoration: unset;
   background-color: #9717ff;
   color: #fff;
@@ -37,7 +44,7 @@ a.primary-cta {
   cursor: pointer;
 }
 
-a.primary-cta:hover {
+.primary-cta:hover {
   background-color: #7313c2;
 }
 
@@ -50,7 +57,8 @@ a.primary-cta:hover {
 #video,
 #merch,
 #events,
-#contact {
+#contact,
+.mailing-list-section {
   /* padding-top: 145px; */
   padding-top: 170px;
 }
@@ -193,13 +201,6 @@ header {
   width: 100%;
 }
 
-.latest-cta-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .yt-video-container {
   display: flex;
   justify-content: center;
@@ -233,4 +234,12 @@ header {
 
 .merch-container .merch-item > h5 {
   display: none;
+}
+
+.no-events-message {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: unset;
 }

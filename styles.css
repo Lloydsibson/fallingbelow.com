@@ -59,8 +59,16 @@ section > h2 {
 #events,
 #contact,
 .mailing-list-section {
-  /* padding-top: 145px; */
   padding-top: 170px;
+}
+
+#latest,
+#video,
+#events,
+#contact,
+.mailing-list-section {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* SECTION TITLE */
@@ -217,14 +225,40 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 38px;
-  margin: 0 auto 75px auto;
-  max-width: 1128px;
+  margin: 0 0 75px 0;
+  /* max-width: 1128px; */
+}
+
+.merch-container__inner-container {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  /* scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; */
+}
+
+.merch-container a {
+  display: block;
+  width: 290px;
+  /* scroll-snap-align: start; */
+  margin-right: 38px;
+}
+
+.merch-container a:first-child {
+  margin-left: 16px;
+}
+
+.merch-container a:last-child {
+  margin-right: 16px;
+}
+
+.merch-container .merch-item {
+  width: 290px;
 }
 
 .merch-container .merch-item > img {
   border-radius: 15px;
-  width: 100%;
+  width: 290px;
 }
 
 .merch-container .merch-item > img:hover {
@@ -304,4 +338,25 @@ footer svg {
 
 footer svg > path {
   fill: #fff;
+}
+
+/* @media (max-width: 1000px) {
+  nav ul li:not(#sign-up-cta) {
+    display: none;
+  }
+} */
+
+@media (max-width: 830px) {
+  nav ul li:not(#sign-up-cta) {
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  .latest-updates-container {
+    flex-direction: column;
+  }
+  .latest-updates-container__item:nth-child(1) {
+    padding-bottom: 75px;
+  }
 }

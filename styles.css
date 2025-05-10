@@ -151,7 +151,7 @@ header {
   text-transform: uppercase;
   display: block;
   border: unset;
-  padding: 10px 30px;
+  padding: 12px 30px;
   border-radius: 50px;
   cursor: pointer;
   /* transition: all 0.3s ease; */
@@ -177,6 +177,7 @@ header {
 
 .info-banner {
   background-color: #c00be0;
+  padding: 0 16px;
 }
 
 .info-banner p {
@@ -184,7 +185,7 @@ header {
   text-align: center;
   width: 100%;
   margin: 0;
-  padding: 5px 20px;
+  padding: 5px 0;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.875rem;
@@ -304,6 +305,7 @@ footer > p {
   font-size: 1.313rem;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
 }
 
 footer ul {
@@ -350,13 +352,48 @@ footer svg > path {
   nav ul li:not(#sign-up-cta) {
     display: none;
   }
+  .nav-container > nav > ul > li#sign-up-cta > button {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 719px) {
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  /* SECTION SUBTITLE */
+  .section-subtitle {
+    font-size: 2rem;
+  }
+  #latest,
+  #video,
+  #merch,
+  #events,
+  #contact,
+  .mailing-list-section {
+    padding-top: 75px;
+  }
+  .section-subtitle,
+  .latest-updates-container,
+  .merch-container,
+  #video > .yt-video-container:nth-child(4) {
+    margin-bottom: 50px;
+  }
   .latest-updates-container {
     flex-direction: column;
   }
   .latest-updates-container__item:nth-child(1) {
     padding-bottom: 75px;
+  }
+  .latest-updates-container {
+    gap: unset;
+  }
+  .no-events-message {
+    font-size: 1.3rem;
+  }
+  footer {
+    padding-top: 125px;
   }
 }

@@ -42,6 +42,7 @@ section > h2 {
   padding: 16px 73px;
   border-radius: 50px;
   cursor: pointer;
+  text-align: center;
 }
 
 .primary-cta:hover {
@@ -223,6 +224,10 @@ header {
   margin-bottom: 165px;
 }
 
+#merch .primary-cta {
+  margin: 0 16px;
+}
+
 .merch-container {
   display: flex;
   justify-content: center;
@@ -402,5 +407,11 @@ footer svg > path {
   }
   footer > p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .primary-cta {
+    width: 100%;
   }
 }

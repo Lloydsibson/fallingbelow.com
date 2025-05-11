@@ -144,6 +144,7 @@ header {
   transition: all 0.3s ease;
 }
 
+.nav-container > nav > ul > li#sign-up-cta > a,
 .nav-container > nav > ul > li#sign-up-cta > button {
   text-decoration: unset;
   background-color: #fff;
@@ -308,7 +309,7 @@ footer > img {
 
 footer > p {
   color: #fff;
-  font-size: 1.313rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -358,6 +359,7 @@ footer svg > path {
   nav ul li:not(#sign-up-cta) {
     display: none;
   }
+  .nav-container > nav > ul > li#sign-up-cta > a,
   .nav-container > nav > ul > li#sign-up-cta > button {
     font-size: 1rem;
   }
@@ -404,9 +406,6 @@ footer svg > path {
   }
   footer {
     padding-top: 125px;
-  }
-  footer > p {
-    font-size: 1rem;
   }
 }
 

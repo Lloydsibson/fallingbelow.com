@@ -222,12 +222,18 @@ header {
   z-index: 9;
 }
 
-.hero-video-container__logo svg {
+.hero-video-container__logo img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+/* .hero-video-container__logo svg {
   width: 100%;
   fill: #ffffff !important;
-  isolation: auto !important; /* Remove isolate effect */
+  isolation: auto !important; 
   mix-blend-mode: normal !important;
-}
+} */
 
 .latest-updates-container {
   display: flex;

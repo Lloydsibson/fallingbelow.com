@@ -219,7 +219,7 @@ header {
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 750px;
-  z-index: 999;
+  z-index: 9;
 }
 
 .hero-video-container__logo > img {

@@ -198,10 +198,27 @@ header {
   font-size: 0.875rem;
 }
 
-#hero-video img {
+#hero-video .hero-video-container > img {
   width: 100%;
   height: calc(100vh - 115px);
   object-fit: cover;
+}
+
+.hero-video-container {
+  position: relative;
+}
+
+.hero-video-container__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 750px;
+}
+
+.hero-video-container__logo > img {
+  width: 100%;
 }
 
 .latest-updates-container {
@@ -371,7 +388,7 @@ header {
   cursor: pointer;
   border: unset;
   background-color: #fff;
-
+  accent-color: #c00be0;
   flex-shrink: 0;
 }
 
@@ -518,6 +535,10 @@ footer svg > path {
   }
   .no-events-message {
     font-size: 1.3rem;
+  }
+  .form-privacy-policy input {
+    width: 35px;
+    height: 35px;
   }
   footer {
     padding-top: 125px;

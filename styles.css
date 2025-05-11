@@ -334,7 +334,7 @@ header {
   color: #fff;
   font-size: 1rem;
   margin-top: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   caret-color: #fff;
 }
 
@@ -365,12 +365,14 @@ header {
 }
 
 .form-privacy-policy input {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-right: 16px;
   cursor: pointer;
   border: unset;
   background-color: #fff;
+
+  flex-shrink: 0;
 }
 
 .contact-form-container form button {
@@ -462,10 +464,10 @@ footer svg > path {
   .form-privacy-policy {
     margin-bottom: 16px;
   }
-  .form-privacy-policy input {
+  /* .form-privacy-policy input {
     width: 75px;
     height: 75px;
-  }
+  } */
 }
 
 @media (max-width: 875px) {

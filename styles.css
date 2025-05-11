@@ -14,8 +14,8 @@ body {
 }
 
 /* ADDED HEIGHT FOR NAV BAR */
-body {
-  margin-top: 115px;
+#hero-video {
+  padding-top: 115px;
 }
 
 :focus-visible {

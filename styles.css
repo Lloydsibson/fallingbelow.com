@@ -182,6 +182,10 @@ header {
   display: none;
 }
 
+.nav-logo > svg {
+  width: 95px;
+}
+
 .info-banner {
   background-color: #c00be0;
   padding: 0 16px;
@@ -213,7 +217,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   max-width: 750px;
 }
 
@@ -277,10 +281,6 @@ header {
   margin-left: 16px;
 }
 
-.merch-container a:last-child {
-  margin-right: 16px;
-}
-
 .merch-container .merch-item {
   width: 290px;
 }
@@ -333,12 +333,14 @@ header {
 .contact-form-container form .form-row:nth-child(1) {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 40%;
 }
 
 .contact-form-container form .form-row:nth-child(2) {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 60%;
 }
 
@@ -405,7 +407,7 @@ footer {
   background: #000000;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 1) 50%,
     rgba(151, 23, 255, 1) 100%
   );
 }
@@ -449,7 +451,12 @@ footer ul > li > a {
   display: block;
 }
 
-footer svg {
+footer > svg {
+  width: 135px;
+  margin-bottom: 35px;
+}
+
+footer a > svg {
   width: 33px;
   height: 33px;
   margin: 0 10px;
@@ -464,6 +471,17 @@ footer svg > path {
     display: none;
   }
 } */
+@media (max-width: 1300px) {
+  .merch-container a:last-child {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-input-container:nth-child(3) input {
+    margin-bottom: unset;
+  }
+}
 
 @media (max-width: 992px) {
   .contact-form-container form .form-group {
@@ -542,6 +560,11 @@ footer svg > path {
   }
   footer {
     padding-top: 125px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(151, 23, 255, 1) 100%
+    );
   }
 }
 

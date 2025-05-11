@@ -38,7 +38,7 @@ section > h2 {
   text-decoration: unset;
   background-color: #9717ff;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
   display: block;
@@ -234,8 +234,14 @@ header {
   max-width: 1128px;
 }
 
-.latest-updates-container__item > img {
-  width: 100%;
+.latest-updates-container__item img {
+  width: calc(100% - 4px);
+  max-width: 545px;
+  border: 2px solid #fff;
+}
+
+.latest-updates-container__item a {
+  font-size: 0;
 }
 
 .yt-video-container {
@@ -277,8 +283,8 @@ header {
   margin: 3px 38px 3px 3px;
 }
 
-.merch-container a:first-child {
-  margin-left: 16px;
+.merch-container a:last-child {
+  margin-right: unset;
 }
 
 .merch-container .merch-item {
@@ -471,9 +477,15 @@ footer svg > path {
     display: none;
   }
 } */
-@media (max-width: 1300px) {
+@media (max-width: 1340px) {
+  .merch-container a {
+    margin-right: 16px;
+  }
   .merch-container a:last-child {
     margin-right: 32px;
+  }
+  .merch-container a:first-child {
+    margin-left: 16px;
   }
 }
 
@@ -546,7 +558,7 @@ footer svg > path {
     flex-direction: column;
   }
   .latest-updates-container__item:nth-child(1) {
-    padding-bottom: 75px;
+    padding-bottom: 55px;
   }
   .latest-updates-container {
     gap: unset;

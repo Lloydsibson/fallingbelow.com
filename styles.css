@@ -1,3 +1,61 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Element Consistency */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Remove focus outline but preserve accessibility */
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Set a standard box model */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Remove extra space for inputs in iOS */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Inherit font styles */
+body,
+button,
+input,
+textarea,
+select {
+  font-family: Arial, sans-serif;
+}
+
 :root {
   --font-poppins: "Poppins", sans-serif;
 }
@@ -58,6 +116,8 @@ section > h2 {
   padding-top: 170px;
 }
 
+#about,
+#logo-carousel,
 #latest,
 #video,
 #merch,
@@ -67,6 +127,8 @@ section > h2 {
   padding-top: 170px;
 }
 
+#about,
+#logo-carousel,
 #latest,
 #video,
 #events,
@@ -246,7 +308,7 @@ header {
   fill: #fff;
 }
 
-.hero-video-container__arrow a {
+.hero-video-container__arrow {
   display: block;
   width: 100%;
   height: 100%;
@@ -259,6 +321,40 @@ header {
   isolation: auto !important; 
   mix-blend-mode: normal !important;
 } */
+
+#about {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+#about p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 850px;
+  font-style: italic;
+}
+
+#about p:nth-child(4) {
+  margin-bottom: 16px;
+}
+
+.logo-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.logo-carousel-container .logo-carousel-container__item img {
+  width: 100%;
+  max-width: 200px;
+  filter: grayscale();
+}
 
 .latest-updates-container {
   display: flex;
@@ -531,6 +627,9 @@ footer svg > path {
 }
 
 @media (max-width: 992px) {
+  #about p {
+    font-size: 1.25rem;
+  }
   .contact-form-container form .form-group {
     flex-direction: column;
   }
@@ -544,7 +643,8 @@ footer svg > path {
     min-height: 300px;
   }
   .form-privacy-policy {
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 30px;
   }
   /* .form-privacy-policy input {
     width: 75px;
@@ -552,7 +652,7 @@ footer svg > path {
   } */
 }
 
-@media (max-width: 875px) {
+@media (max-width: 960px) {
   nav ul li:not(#sign-up-cta) {
     display: none;
   }
@@ -572,6 +672,9 @@ footer svg > path {
   .section-subtitle {
     font-size: 2rem;
   }
+
+  #about,
+  #logo-carousel,
   #latest,
   #video,
   #merch,
@@ -592,6 +695,10 @@ footer svg > path {
   .hero-video-container__arrow {
     max-width: 30px;
     max-height: 30px;
+  }
+
+  .logo-carousel-container {
+    flex-direction: column;
   }
 
   .latest-updates-container {
@@ -623,5 +730,19 @@ footer svg > path {
 @media (max-width: 425px) {
   .primary-cta {
     width: 100%;
+  }
+}
+
+@media (min-height: 601px) and (max-height: 800px) {
+  .hero-video-container__logo,
+  .hero-video-container__logo img {
+    max-width: 500px;
+  }
+}
+
+@media (max-height: 600px) {
+  .hero-video-container__logo,
+  .hero-video-container__logo img {
+    max-width: 300px;
   }
 }

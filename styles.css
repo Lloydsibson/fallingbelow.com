@@ -357,6 +357,10 @@ header {
   filter: grayscale();
 }
 
+.logo-carousel-container .logo-carousel-container__item h5 {
+  display: none;
+}
+
 #pressQuotes {
   padding-top: 75px;
 }
@@ -604,6 +608,7 @@ body > footer ul {
   margin-block-end: unset;
   margin-block-start: unset;
   padding-inline-start: unset;
+  margin-top: 16px;
   width: 100%;
 }
 

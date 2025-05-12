@@ -158,7 +158,7 @@ header {
   text-transform: uppercase;
   display: block;
   border: unset;
-  padding: 12px 30px;
+  padding: 7px 30px;
   border-radius: 50px;
   cursor: pointer;
   /* transition: all 0.3s ease; */
@@ -227,6 +227,30 @@ header {
   width: 100%;
   max-width: 750px;
   height: auto;
+}
+
+.hero-video-container__arrow {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  z-index: 9;
+}
+
+.hero-video-container__arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.hero-video-container__arrow a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
 }
 
 /* .hero-video-container__logo svg {
@@ -563,6 +587,11 @@ footer svg > path {
   }
   #video > .yt-video-container:nth-child(4) {
     margin-bottom: 75px;
+  }
+
+  .hero-video-container__arrow {
+    max-width: 30px;
+    max-height: 30px;
   }
 
   .latest-updates-container {

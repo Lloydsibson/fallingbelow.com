@@ -565,7 +565,7 @@ header {
   font-family: var(--font-poppins);
 }
 
-main > footer {
+body > footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,14 +579,14 @@ main > footer {
   );
 }
 
-main > footer > img {
+body > footer > img {
   width: 100%;
   max-width: 150px;
   margin-bottom: 20px;
   display: block;
 }
 
-main > footer > p {
+body > footer > p {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -594,7 +594,7 @@ main > footer > p {
   text-align: center;
 }
 
-main > footer ul {
+body > footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,29 +607,29 @@ main > footer ul {
   width: 100%;
 }
 
-main > footer ul > li {
+body > footer ul > li {
   list-style: none;
   display: block;
   text-align: unset;
 }
 
-main > footer ul > li > a {
+body > footer ul > li > a {
   font-size: 0;
   display: block;
 }
 
-main > footer > svg {
+body > footer > svg {
   width: 135px;
   margin-bottom: 35px;
 }
 
-main > footer a > svg {
+body > footer a > svg {
   width: 33px;
   height: 33px;
   margin: 0 10px;
 }
 
-main > footer svg > path {
+body > footer svg > path {
   fill: #fff;
 }
 
@@ -756,7 +756,7 @@ main > footer svg > path {
     width: 35px;
     height: 35px;
   }
-  main > footer {
+  body > footer {
     padding-top: 125px;
     background: linear-gradient(
       180deg,

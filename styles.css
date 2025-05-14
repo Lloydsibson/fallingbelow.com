@@ -123,7 +123,7 @@ section > h2 {
 #merch,
 #events,
 #contact,
-.mailing-list-section {
+#mailing-list-section {
   padding-top: 170px;
 }
 
@@ -134,7 +134,7 @@ section > h2 {
 #video,
 #events,
 #contact,
-.mailing-list-section {
+#mailing-list-section {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -731,7 +731,7 @@ body > footer svg > path {
   #merch,
   #events,
   #contact,
-  .mailing-list-section {
+  #mailing-list-section {
     padding-top: 75px;
   }
   .section-subtitle,
@@ -778,15 +778,15 @@ body > footer svg > path {
   }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   .primary-cta {
     width: 100%;
   }
-}
+} */
 
-@media (min-height: 601px) and (max-height: 800px) {
+@media (min-height: 601px) and (max-height: 1000px) {
   .hero-video-container__logo {
-    max-width: 500px;
+    max-width: 750px;
   }
 }
 

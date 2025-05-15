@@ -402,7 +402,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 38px;
-  margin: 0 auto 75px auto;
+  margin: 0 auto;
   max-width: 1128px;
 }
 
@@ -412,8 +412,12 @@ header {
   border: 2px solid #fff;
 }
 
-.latest-updates-container__item a {
+.latest-updates-container__item > a {
   font-size: 0;
+}
+
+.latest-updates-container__item > .primary-cta-container {
+  padding-top: 75px;
 }
 
 .yt-video-container {
@@ -739,6 +743,11 @@ body > footer svg > path {
   .merch-container {
     margin-bottom: 50px;
   }
+
+  .latest-updates-container__item > .primary-cta-container {
+    padding-top: 50px;
+  }
+
   #video > .yt-video-container:nth-child(4) {
     margin-bottom: 75px;
   }

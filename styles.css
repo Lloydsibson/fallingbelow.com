@@ -402,7 +402,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 38px;
-  margin: 0 auto;
+  margin: 0 auto 75px auto;
   max-width: 1128px;
 }
 
@@ -804,3 +804,5 @@ body > footer svg > path {
     max-width: 300px;
   }
 }
+
+/* STREAM PAGE */

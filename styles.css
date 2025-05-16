@@ -876,6 +876,7 @@ body > footer svg > path {
 .popular-container__popular > a:hover > div {
   transform: scale(0.95);
   border-color: #9717ff;
+  background-color: #9717ff;
 }
 
 .streaming-container__platforms > a > div,

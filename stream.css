@@ -107,6 +107,13 @@
 }
 
 @media (max-width: 719px) {
+  .stream-page {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 82%,
+      rgba(151, 23, 255, 1) 100%
+    );
+  }
   .streaming-container__platforms,
   .popular-container__popular {
     margin-bottom: 50px;
@@ -124,7 +131,6 @@
   max-width: 2100px;
   margin: 0 auto;
   transform: rotate(180deg);
-  /* transform: scale(-1); */
 }
 
 #stars {

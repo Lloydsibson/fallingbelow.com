@@ -277,10 +277,14 @@ header {
   /* height: calc(100vh - 115px);
   height: calc(100dvh - 115px); */
   object-fit: cover;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-video-container {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .hero-video-container__logo {
@@ -291,13 +295,31 @@ header {
   width: 90%;
   max-width: 1400px;
   opacity: 0.75;
-  z-index: 9;
+  z-index: 2;
 }
 
 .hero-video-container__logo img {
   width: 100%;
   height: auto;
 }
+
+.hero-video-container .video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+  transition: opacity 0.5s ease;
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+/* .hero-video-container video:playing + .video-placeholder {
+  opacity: 0;
+  pointer-events: none;
+} */
 
 .hero-video-container__arrow {
   position: absolute;

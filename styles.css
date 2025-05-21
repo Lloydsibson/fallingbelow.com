@@ -487,16 +487,18 @@ header {
 
 .merch-container .merch-item {
   width: 290px;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .merch-container .merch-item > img {
-  border-radius: 15px;
-  width: 290px;
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 .merch-container .merch-item > img:hover {
-  opacity: 0.75;
-  transition: all 0.3s ease;
+  transform: scale(1.2);
 }
 
 .merch-container .merch-item > h5 {

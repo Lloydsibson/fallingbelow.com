@@ -17,6 +17,11 @@
   display: none;
 }
 
+.stream-page #mailing-list-section {
+  padding-top: unset;
+  margin-bottom: 75px;
+}
+
 .streaming-container {
   display: flex;
   flex-direction: column;
@@ -106,9 +111,24 @@
   font-size: 1.3rem;
 }
 
+.stream-page .primary-cta-container > a {
+  background-color: unset;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.stream-page .primary-cta-container > a > svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
 @media (max-width: 719px) {
   .streaming-container__platforms,
-  .popular-container__popular {
+  .popular-container__popular,
+  .stream-page #mailing-list-section {
     margin-bottom: 50px;
   }
 }

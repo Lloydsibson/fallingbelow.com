@@ -131,6 +131,9 @@
   .stream-page #mailing-list-section {
     margin-bottom: 50px;
   }
+  body.stream-page > footer {
+    padding-top: 125px;
+  }
 }
 
 /* CSS PARTICLE ANIMATION */

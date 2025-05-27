@@ -80,6 +80,10 @@ body {
   outline: 3px solid #c00be0;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+}
+
 section > h2 {
   display: none;
 }
@@ -817,7 +821,7 @@ body > footer svg > path {
     height: 35px;
   }
   body > footer {
-    padding-top: 125px;
+    padding-top: 175px;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 30%,

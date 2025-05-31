@@ -17,15 +17,85 @@
   display: none;
 }
 
+.streaming-container.latest {
+  flex-direction: row;
+  max-width: 500px;
+  margin-bottom: 75px;
+  border: 1px solid #fff;
+  gap: 20px;
+  position: relative;
+}
+
+.stream-page .streaming-container__latest {
+  display: flex;
+  flex-direction: column;
+}
+
+.stream-page .streaming-container__latest:nth-child(2) {
+  width: calc(100% - 100px);
+}
+
+.stream-page .streaming-container__latest > img {
+  max-width: 100px;
+  width: 100px;
+}
+
 .stream-page #mailing-list-section {
   padding-top: unset;
   margin-bottom: 75px;
+}
+
+.stream-page .streaming-container__latest > p,
+.stream-page .streaming-container__latest > h2 {
+  color: #fff;
+}
+
+.stream-page .streaming-container__latest > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stream-page .streaming-container__latest > p {
+  font-size: 0.88rem;
+}
+
+.latest-pill {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  background-color: #c00be0;
+  padding: 5px 20px;
+  border-radius: 50px;
+  z-index: 9;
+  box-shadow: rgb(38, 57, 77) 0px 10px 8px -9px;
+}
+
+.latest-pill > p {
+  color: #fff;
+  font-size: 0.77rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 234, 0.711);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
 }
 
 .streaming-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 1128px;
   margin: 0 auto;
 }
@@ -34,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 75px auto;
+  margin: 75px auto 100px auto;
 }
 
 .logo-container img {
@@ -126,6 +196,10 @@
 }
 
 @media (max-width: 719px) {
+  .logo-container {
+    margin-bottom: 75px;
+  }
+  .streaming-container.latest,
   .streaming-container__platforms,
   .popular-container__popular,
   .stream-page #mailing-list-section {
@@ -133,6 +207,21 @@
   }
   body.stream-page > footer {
     padding-top: 125px;
+  }
+  .streaming-container.latest {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .stream-page .streaming-container__latest > h2 {
+    font-size: 1.1rem;
+  }
+  .stream-page .streaming-container__latest > p {
+    font-size: 0.77rem;
+  }
+  .streaming-container.latest {
+    gap: 10px;
   }
 }
 

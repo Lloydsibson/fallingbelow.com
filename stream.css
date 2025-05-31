@@ -181,18 +181,22 @@
   font-size: 1.3rem;
 }
 
-.stream-page .primary-cta-container > a {
+.stream-page .primary-cta-container.back > a {
   background-color: unset;
   display: flex;
   align-items: center;
   padding: 16px;
 }
 
-.stream-page .primary-cta-container > a > svg {
+.stream-page .primary-cta-container.back > a > svg {
   width: 40px;
   height: 40px;
   fill: #fff;
   margin-right: 10px;
+}
+
+.merch {
+  margin-bottom: 75px;
 }
 
 @media (max-width: 719px) {
@@ -202,7 +206,8 @@
   .streaming-container.latest,
   .streaming-container__platforms,
   .popular-container__popular,
-  .stream-page #mailing-list-section {
+  .stream-page #mailing-list-section,
+  .merch {
     margin-bottom: 50px;
   }
   body.stream-page > footer {

@@ -712,6 +712,12 @@ body > footer svg > path {
   }
 }
 
+@media (max-width: 1090px) {
+  nav ul li:not(#sign-up-cta) {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   .form-input-container:nth-child(3) input {
     margin-bottom: unset;
@@ -751,12 +757,6 @@ body > footer svg > path {
     width: 75px;
     height: 75px;
   } */
-}
-
-@media (max-width: 960px) {
-  nav ul li:not(#sign-up-cta) {
-    display: none;
-  }
   .nav-container > nav > ul > li#sign-up-cta > a,
   .nav-container > nav > ul > li#sign-up-cta > button {
     font-size: 1rem;

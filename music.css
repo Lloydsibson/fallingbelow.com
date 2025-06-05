@@ -4,13 +4,13 @@
   background: #000000;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 1) 75%,
     rgba(151, 23, 255, 1) 100%
   );
 }
 
 .stream-page main > div,
-.stream-page main > section:not(.merch) {
+.stream-page main > section:not(.merch, .latest) {
   padding: 0 20px;
 }
 
@@ -23,8 +23,17 @@
   max-width: 500px;
   margin-bottom: 75px;
   border: 1px solid #fff;
+  border-radius: 10px;
   gap: 20px;
   position: relative;
+  text-decoration: unset;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.streaming-container.latest:hover {
+  transform: scale(0.95);
 }
 
 .stream-page .streaming-container__latest {
@@ -39,6 +48,7 @@
 .stream-page .streaming-container__latest > img {
   max-width: 100px;
   width: 100px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .stream-page #mailing-list-section {
@@ -52,7 +62,7 @@
 }
 
 .stream-page .streaming-container__latest > h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -227,7 +237,7 @@
 
 @media (max-width: 330px) {
   .stream-page .streaming-container__latest > h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .stream-page .streaming-container__latest > p {
     font-size: 0.77rem;

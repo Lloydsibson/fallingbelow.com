@@ -496,7 +496,8 @@ header {
 
 .merch-container .merch-item {
   width: 290px;
-  height: 290px;
+  /* height: 290px; */
+  height: 362px;
   overflow: hidden;
   border-radius: 15px;
 }

@@ -865,3 +865,82 @@ body > footer svg > path {
     max-width: 300px;
   }
 }
+
+/*  ********************  */
+/* COUNTER DOWN TIMER */
+/*  ********************  */
+#countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.403); */
+  padding: 0 10px 10px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto 50px auto;
+  font-size: 1.3rem;
+  max-width: 500px;
+  height: 231px;
+  width: 100%;
+}
+
+.countdown-breakdown-container {
+  display: flex;
+}
+
+.countdown-breakdown-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.countdown-breakdown-container > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.countdown-breakdown-container > div > span {
+  display: block;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: -10px;
+  font-weight: 600;
+}
+
+/* @media (min-width: 992px) {
+  #countdown-timer {
+    margin-bottom: 40px;
+  }
+} */
+
+@media (max-width: 768px) {
+  #countdown-timer {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    height: 132px;
+  }
+  .countdown-breakdown-container > div > span {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  #countdown-timer {
+    font-size: 1rem;
+    height: 108px;
+  }
+
+  .countdown-breakdown-container > div > span {
+    font-size: 2.5rem;
+  }
+}
+/*  ********************  */
+/* COUNT DOWN TIMER ENDS */
+/*  ********************  */
